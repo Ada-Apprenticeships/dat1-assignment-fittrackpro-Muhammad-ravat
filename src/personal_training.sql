@@ -18,4 +18,5 @@ SELECT
 FROM personal_training_sessions pts
 JOIN members m ON pts.member_id = m.member_id
 JOIN staff s ON pts.staff_id = s.staff_id
-WHERE s.first_name = 'Ivy' AND s.last_name = 'Irwin';
+WHERE s.first_name = 'Ivy' AND s.last_name = 'Irwin'
+ORDER BY pt.session_date, pt.start_time;
